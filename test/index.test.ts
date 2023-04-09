@@ -1,7 +1,12 @@
-import {describe, expect, test} from '@jest/globals';
+import foo from '../src/index';
 
 describe('foo', () => {
-  test('adds 1 + 2 to equal 3', () => {
-    expect(1+2).toBe(3);
+  it('should expose a function', () => {
+		expect(foo).toBeDefined();
+	});
+  
+  it('foo should return expected output', () => {
+    // const retValue = foo();
+    expect(false).toBeTruthy();
   });
 });
