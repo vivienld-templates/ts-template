@@ -4,6 +4,7 @@
   "description": "A typescript project template ",
   "main": "src/index.ts",
   "scripts": {
+    "test":"npx jest --collectCoverage",
     "generate:test": "jest-test-gen ./src/%FILE% --outputDir ../test --fileSuffix .test",
     "generate:package": "tsc",
     "generate:doc": "npx typedoc src/index.ts"
