@@ -4,10 +4,12 @@
   "description": "A typescript project template ",
   "main": "src/index.ts",
   "scripts": {
-    "test":"npx jest --collectCoverage",
+    "commit":"cz",
+    "test": "npx jest --collectCoverage",
     "generate:test": "jest-test-gen ./src/%FILE% --outputDir ../test --fileSuffix .test",
     "generate:package": "tsc",
-    "generate:doc": "npx typedoc src/index.ts"
+    "generate:doc": "npx typedoc src/index.ts",
+    "generate:all": "npm run generate:doc && npm run generate:package"
   },
   "author": "",
   "license": "ISC",
