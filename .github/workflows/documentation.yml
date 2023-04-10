@@ -12,6 +12,7 @@ jobs:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm run build:docs
+      # Don't forget to update workflow permissions in Github Actions Settings (Organization + Repository)
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
