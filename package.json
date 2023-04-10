@@ -9,7 +9,7 @@
     "build:test": "jest-test-gen ./src/%FILE% --outputDir ../test --fileSuffix .test",
     "build:package": "tsc",
     "build:docs": "npx typedoc src/index.ts",
-    "build": "npm run generate:doc && npm run generate:package"
+    "build": "npm run build:docs && npm run build:package"
   },
   "author": "",
   "license": "ISC",
