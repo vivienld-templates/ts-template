@@ -6,10 +6,10 @@
   "scripts": {
     "commit":"cz",
     "test": "npx jest --collectCoverage",
-    "generate:test": "jest-test-gen ./src/%FILE% --outputDir ../test --fileSuffix .test",
-    "generate:package": "tsc",
-    "generate:doc": "npx typedoc src/index.ts",
-    "generate:all": "npm run generate:doc && npm run generate:package"
+    "build:test": "jest-test-gen ./src/%FILE% --outputDir ../test --fileSuffix .test",
+    "build:package": "tsc",
+    "build:doc": "npx typedoc src/index.ts",
+    "build": "npm run generate:doc && npm run generate:package"
   },
   "author": "",
   "license": "ISC",
