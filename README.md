@@ -49,3 +49,4 @@ npm run build
 This template includes a workflow that deploys the package to npm, compiles it's documentation and deploys it to gh-pages. Don't forget to activate gh-pages and to update the workflow permissions of your Github repository.
 
 You must declare the GITHUB_TOKEN and NPM_TOKEN secrets in your User/Organization/Repository settings.
+# template-generator-core
